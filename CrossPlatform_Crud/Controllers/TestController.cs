@@ -51,7 +51,6 @@ namespace CrossPlatform_Crud.Controllers
 
             HttpContent t = new StringContent(jsonCust, Encoding.UTF8, "application/json");
 
-
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri(baseUrl);
