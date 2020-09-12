@@ -1,0 +1,54 @@
+﻿@model CrossPlatform_Crud.Models.ViewModels.CreateCustomer
+
+<div class="create-customer">
+    <div class="card">
+        <div class="card-header bg-info">
+            <h4 class="card-title">Create Customer</h4>
+        </div>
+        <div class="card-body text-dark text-left">
+            @if (TempData["Customer_SM"] != null)
+            {
+                <div class="alert alert-success">
+                    @TempData["Customer_SM"]
+                </div>
+            }
+
+            @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+            <div class="form-group">
+                <div class="input-group">
+                    <input class="form-control customer-name"
+                           placeholder="First Name ..." type="text" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <input class="form-control customer-surname"
+                           placeholder="Surname ..." type="text" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Age</label>
+                <div class="input-group">
+                    <input class="form-control customer-age"
+                           type="number" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Hire Date</label>
+                <div class="input-group">
+                    <input class="form-control customer-date"
+                           type="date" />
+                </div>
+            </div>
+            <div class="form-group text-center">
+                <button id="create-cust" class="btn btn-success">
+                    Create
+                </button>
+                <span class="loader d-none">
+                    <img src="~/Content/ajax-loader.gif" />
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

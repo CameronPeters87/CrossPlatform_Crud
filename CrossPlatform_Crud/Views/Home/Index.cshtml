@@ -1,0 +1,37 @@
+﻿@model IEnumerable<CrossPlatform_Crud.Models.Customer>
+
+@{
+    ViewBag.Title = "Customer List";
+}
+
+<table class="table table-bordered table-hover">
+    <thead class="table-success">
+        <tr>
+            <td>First Name</td>
+            <td>Surname</td>
+            <td>Hire Date</td>
+            <td>Age</td>
+        </tr>
+    </thead>
+    <tbody>
+        @if (!Model.Any())
+        {
+            <tr>
+                <td>There are no customers</td>
+                <td colspan="3"></td>
+            </tr>
+        }
+        else
+        {
+            foreach (var customer in Model)
+            {
+                <tr>
+                    <td>@customer.FirstName</td>
+                    <td>@customer.Surname</td>
+                    <td>@customer.Hire_Date</td>
+                    <td>@customer.Surname</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
