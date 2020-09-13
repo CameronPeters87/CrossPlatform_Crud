@@ -18,21 +18,16 @@ namespace CrossPlatform_Crud
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            //bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-            //          "~/Scripts/bootstrap.js"));
-
-            //bundles.Add(new StyleBundle("~/Content/css").Include(
-            //          "~/Content/bootstrap.css",
-            //          "~/Content/site.css"));
-
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Content/Theme/vendor/bootstrap/js/bootstrap.bundle.min.js",
-                      "~/Scripts/CreateCustomer.js"));
+                      "~/Scripts/CreateCustomer.js",
+                      "~/Scripts/Customer.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/Theme/vendor/bootstrap/css/bootstrap.min.css",
                       "~/Content/Theme/css/one-page-wonder.min.css",
-                      "~/Content/font-awesome.min.css"));
+                      "~/Content/font-awesome.min.css",
+                      "~/Content/Table.css"));
         }
     }
 }

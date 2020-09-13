@@ -25,11 +25,12 @@
         {
             foreach (var customer in Model)
             {
-                <tr>
+                ViewBag.Date = customer.Hire_Date.ToLongDateString();
+                <tr data-id="@customer.Id" class="pointer">
                     <td>@customer.FirstName</td>
                     <td>@customer.Surname</td>
-                    <td>@customer.Hire_Date</td>
-                    <td>@customer.Surname</td>
+                    <td>@ViewBag.Date</td>
+                    <td>@customer.Age</td>
                 </tr>
             }
         }

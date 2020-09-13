@@ -184,7 +184,6 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDBContext.cs" />
-    <Compile Include="Models\ArrayOfCustomers.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\ViewModels\CreateCustomer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -199,6 +198,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\Table.css" />
     <Content Include="Content\Theme\css\one-page-wonder.css" />
     <Content Include="Content\Theme\css\one-page-wonder.min.css" />
     <Content Include="Content\Theme\img\01.jpg" />
@@ -239,6 +239,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\CreateCustomer.js" />
+    <Content Include="Scripts\Customer.js" />
     <Content Include="Scripts\esm\popper-utils.js" />
     <Content Include="Scripts\esm\popper-utils.min.js" />
     <Content Include="Scripts\esm\popper.js" />
@@ -369,6 +370,7 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Shared\_CreateCustomerPartial.cshtml" />
     <Content Include="Views\Test\Index.cshtml" />
+    <Content Include="Views\Home\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

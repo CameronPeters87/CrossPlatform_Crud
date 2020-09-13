@@ -5,6 +5,7 @@ namespace CrossPlatform_Crud.Models.ViewModels
 {
     public class CreateCustomer
     {
+        public int Id { get; set; }
         [Required, MinLength(2)]
         public string FirstName { get; set; }
         [Required, MinLength(2)]
